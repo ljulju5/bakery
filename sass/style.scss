@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+$primaryColor: #473816; 
+$secondaryColor: #eadbc2; 
+$white: #fff;
+$black: #333333;
+$orange: #e7931a;
+$padding: 80px 0;
+$font: 16px;
+$fontFamily: 'Montserrat', sans-serif;
+$transition: .4s ease;
+
+/**************
+basic styles
+**************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: $font;
+    font-family: $fontFamily;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    @media only screen and (max-width:768px) {
+        width: 85%;
+    }    
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: $primaryColor;
+    &::after {
+        display: block;
+        content: "";
+        width: 20%;
+        height: 15px;
+        background: linear-gradient(40deg, $orange, $white);
+        margin: 20px auto 40px auto;
+    }
+}
+/**************
+header
+**************/
+header {    
+    background-image: url(img/header-background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0;
+    
+} 
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .logo {
+        img {
+            flex: 0 0 10%;
+            height: 100px;
+            margin-right: 15px;
+        }
+    }
+        h3 {
+            flex: 0 0 20%;
+            font-size: 2.2rem;
+            color: $primaryColor;
+    }
+    p {
+        flex: 0 0 70%;
+        justify-content: flex-end;   
+        display: flex;
+        align-items: center;
+        color: $primaryColor;
+        i {
+            font-size: 2rem;
+            margin: 0 10px;              
+        }
+        .fa-envelope {
+                border-left: 2px solid $primaryColor;
+                padding-left: 15px;
+            }
+    }
+}
+
+/**************
+nav
+**************/
+nav {
+    background-color: $orange;
+    li {
+        display: inline-block;
+        margin: 20px;
+        a {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.2rem;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+
+/**************
+header-content
+**************/
+.header-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/header.jpg);
+    min-height: 60vh;
+    h1 {
+        font-size: 3.5rem;
+        color: $white;
+        padding-top: 230px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-shadow: 4px 3px 0px grey, 9px 8px 0px rgba(0,0,0,0.15);
+    }
+}
+
+/**************
+proizvodi
+**************/
+.proizvodi {
+    background-image: url(img/header-background.png);
+    background-position: center;
+    background-size: cover;
+    padding: $padding;
+    .top-proizvodi {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        article {
+            flex: 0 0 15%;
+            color: $primaryColor;
+            img {
+                width: 100%;
+                height: 180px;
+            } 
+            h4 {
+                margin: 5px 0;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
