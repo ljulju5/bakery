@@ -1,85 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <!-- Animate -->
-    <link
-    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Pekara</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css"
-      media="(prefers-reduced-motion: no-preference)">
 </head>
+
 <body>
-<!--   header   -->
+    <!--   header   -->
     <header>
-       <div class="container">
-                <div class="top-header">
-                    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a> 
-                    <h3>Naša pekarica</h3>                    
-                    <p>
-                        <i class="fas fa-mobile-alt"></i>  
-                        <span> Telefon: 060/111-5555</span>
-                        <i class="far fa-envelope"></i>  
-                        <span> e-mail: office@pekarica.rs</span>
-                    <p>
+        <div class="container">
+            <div class="top-header">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <hgroup>
+                        <h3>Low Carb Shop</h3>
+                        <h5>Bakemax doo</h5>
+                    </hgroup>
                 </div>
-       </div>
+                <p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <span> Telefon: 060/111-5555</span>
+                    <i class="far fa-envelope"></i>
+                    <span> e-mail: shop@lowcarb.rs</span>
+                <p>
+            </div>
+        </div>
     </header>
-<!--   nav   -->
+    <!--   nav   -->
     <nav>
         <div class="container">
             <ul>
                 <li><a href="index.html">Naslovna</a></li>
+                <li><a href="">Shop</a></li>
                 <li><a href="">Proizvodi</a></li>
                 <li><a href="">O nama</a></li>
-                <li><a href="">Recepti</a></li>
+                <li><a href="blog.html">Recepti</a></li>
                 <li><a href="">Kontakt</a></li>
             </ul>
         </div>
-    </nav> 
-<!--   header-content   -->
+    </nav>
+    <!--   header-content   -->
     <section class="header-content">
         <h1 class="container">
-            Poštujte lebac <br> koji jedete
+            Dobrodošli u našu <br>Low Carb prodavnicu!
         </h1>
     </section>
-<!--   proizvodi   -->
+    <!--   benefiti   -->
+    <section class="benefiti">
+        <h2>Benefiti Low Carb proizvoda</h2>
+        <div class="container">
+            <div class="counter col_fourth">
+                <i class="fas fa-arrow-down fa-2x"></i>
+                <h3 class="timer count-title count-number" data-to="85" data-speed="1500"></h3>
+                <p class="count-text ">% manje ugljenih hidrata</p>
+            </div>
+
+            <div class="counter col_fourth">
+                <i class="fas fa-arrow-up fa-2x"></i>
+                <h3 class="timer count-title count-number" data-to="235" data-speed="2500"></h3>
+                <p class="count-text ">% više proteina</p>
+            </div>
+
+            <div class="counter col_fourth">
+                <i class="far fa-thumbs-up fa-2x"></i>
+                <h3 class="timer count-title count-number" data-to="10.1" data-speed="1000"></h3>
+                <p class="count-text ">% vlakana</p>
+            </div>
+
+            <div class="counter col_fourth end">
+                <i class="far fa-smile fa-2x"></i>
+                <h3 class="timer count-title count-number" data-to="100" data-speed="1600"></h3>
+                <p class="count-text ">% uživanja</p>
+            </div>
+        </div>
+    </section>
+    <!--   proizvodi   -->
     <section class="proizvodi">
         <div class="container">
-               <h2>Najpopularniji proizvodi</h2>
-                <div class="top-proizvodi">
-                    <article><img src="img/hleb1.jpg" alt=""><h4>Neki hleb</h4><p>Direktno iz naše pećnice</p></article>
-                    <article><img src="img/hleb2.jpg" alt=""><h4>Neki hleb</h4><p>Direktno iz naše pećnice</p></article>
-                    <article><img src="img/hleb3.jpg" alt=""><h4>Neki hleb</h4><p>Direktno iz naše pećnice</p></article>
-                    <article><img src="img/hleb4.jpg" alt=""><h4>Neki hleb</h4><p>Direktno iz naše pećnice</p></article>
-                    <article><img src="img/hleb5.jpg" alt=""><h4>Neki hleb</h4><p>Direktno iz naše pećnice</p></article>
-                    <article><img src="img/hleb6.jpg" alt=""><h4>Neki hleb</h4><p>Direktno iz naše pećnice</p></article>
-                </div>
+            <h2>Najpopularniji proizvodi</h2>
+            <div class="top-proizvodi">
+                <article><img src="img/hleb1.jpg" alt="">
+                    <h4>Neki hleb</h4>
+                    <p>Direktno iz naše pećnice</p>
+                </article>
+                <article><img src="img/hleb2.jpg" alt="">
+                    <h4>Neki hleb</h4>
+                    <p>Direktno iz naše pećnice</p>
+                </article>
+                <article><img src="img/hleb3.jpg" alt="">
+                    <h4>Neki hleb</h4>
+                    <p>Direktno iz naše pećnice</p>
+                </article>
+                <article><img src="img/hleb4.jpg" alt="">
+                    <h4>Neki hleb</h4>
+                    <p>Direktno iz naše pećnice</p>
+                </article>
+                <article><img src="img/hleb5.jpg" alt="">
+                    <h4>Neki hleb</h4>
+                    <p>Direktno iz naše pećnice</p>
+                </article>
+                <article><img src="img/hleb6.jpg" alt="">
+                    <h4>Neki hleb</h4>
+                    <p>Direktno iz naše pećnice</p>
+                </article>
+            </div>
         </div>
     </section>
 
+    <!--   uvodProizvod   -->
+    <section class="lowCarbFront">
+        <div class="container">
+            <article>
+                <h3>Low Carb miks za pripremu hleba</h3>
+                <p>Bakemax Low Carb smesa je jednostavna i originalna mešavina sa kojom svojim rukama pravite hleb kao i
+                    zanatski. Zahvaljujući mešavini biljnih proteina pšenice, soje i lupine, ova smesa sadrži visok udeo
+                    proteina i nizak sadržaj ugljenih hidrata.
+                    <br><br>Uz pomoć našeg recepta moći ćete da pripremite sjajan, ukusan i izbalansiran hleb, savršen
+                    za bilo koje doba dana i sa čak 75% manje ugljenih hidrata.
 
+                </p>
+                <button><a href="">Saznajte više</a></button>
+            </article>
+            <article>
+                <div class="imgWrapper"><img src="img/lowCarb1.jpg" alt=""></div>
+            </article>
+        </div>
+    </section>
 
+    <!--   uvodProizvod   -->
+    <section class="sprayFront">
+        <div class="container">
+            <article>
+                <h3>Spray &amp; Bake kreker</h3>
+                <p>Sa inovativnom patentiranom Spray & Bake tehnologijom dobićete ukusan i proteinima bogat kreker za
+                    samo 20 minuta. <br><br> Potrebni su vam samo voda, spej boca, pleh za pečenje, papir za pečenje i…
+                    PRAVI RECEPT!
+                </p>
+                <button><a href="">Saznajte više</a></button>
+            </article>
+            <article>
+                <div class="imgWrapper"><img src="img/sprayandbake1.jpg" alt=""></div>
+            </article>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <article>
+                <h4>Low Carb Shop</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, asperiores!</p>
+            </article>
+            <article>
+                <h4>Kontakt</h4>
+                <i class="fas fa-phone">&nbsp;060 555 000</i>
+                <i class="fas fa-envelope">&nbsp;shop@lowcarb.rs</i>
+            </article>
+            <article class="social">
+                <h4>Društvene mreže</h4>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </article>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
